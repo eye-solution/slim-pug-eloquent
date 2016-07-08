@@ -5,9 +5,9 @@ use \Psr\Http\Message\ResponseInterface as Response;
 
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 
-require '../vendor/autoload.php';
-include '../database.php';
-include '../view.php';
+require_once '../vendor/autoload.php';
+require_once '../framework/database.php';
+
 
 $app = new \Slim\App();
 $container = $app->getContainer();
@@ -19,16 +19,9 @@ $container['logger'] = function($c) {
     return $logger;
 };
 
-$container['view'] = function ($c) {
-    $view = new View(array(
-	    'path' => '../views/'
-	));
-    return $view;
-};
-
 $files = glob('../routes/*.php');
 foreach ($files as $file) {
-    require($file);  
+    require_once($file);  
 } 
 
 $app->run();
