@@ -1,6 +1,6 @@
 <?php
-require '../vendor/pug-php/pug/src/Pug/Pug.php';
-require 'config.php';
+require_once '../vendor/pug-php/pug/src/Pug/Pug.php';
+require_once 'config.php';
 use \Pug\Pug as Pug;
 
 class View {

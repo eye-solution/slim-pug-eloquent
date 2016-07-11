@@ -1,5 +1,5 @@
 <?php
-require 'config.php';  
+require_once 'config.php';  
  
 use Illuminate\Database\Capsule\Manager as Capsule;  
  
