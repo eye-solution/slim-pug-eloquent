@@ -3,6 +3,7 @@
         "slim/slim": "^3.0",
         "illuminate/database": "^5.2",
         "monolog/monolog": "^1.20",
-        "pug-php/pug": "^1.12"
+        "pug-php/pug": "^1.12",
+        "leafo/scssphp": "^0.6.5"
     }
 }

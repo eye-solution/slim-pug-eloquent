@@ -2,3 +2,4 @@ vendor
 cache/*.php
 *.log
 .DS_Store
+scss_cache
